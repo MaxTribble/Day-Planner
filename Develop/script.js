@@ -16,8 +16,10 @@ var seventeen = document.getElementById("hour-17")
 var all = [nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen]
 var saveBtn = document.getElementsByClassName("saveBtn")
 
+//sets current date and time at the top of the page
 currentDay.innerHTML=current
 
+//setting color of schedule-block based on the current hour
 for(i=0; i<9;i++){
   console.log(all[i].dataset.hour)
   if(all[i].dataset.hour == hour){
@@ -39,14 +41,17 @@ for(i=0; i<9;i++){
   all[i].classList.remove("present")
 }}
 
+//saving current schedule note to local storage
 function saveSchedule(){
   localStorage.setItem(this.parentNode.id, this.parentNode.querySelector("textarea").value)
 }
 
+//adding event listener to every button to save current message to local storage
 for(i=0; i<all.length; i++){
 saveBtn[i].addEventListener("click", saveSchedule);
 }
 
+//pulling saved schedule from local storage and autofilling schedule slots
 for(i=0; i<all.length; i++){
   all[i].querySelector("textarea").value=localStorage.getItem(all[i].id)
 }
