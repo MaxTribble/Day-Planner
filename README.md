@@ -17,6 +17,9 @@ W3Schools.com provided a lot of documentation that helped me a lot.
 ## License
 MIT License
 
+## Deployed Page
+https://maxtribble.github.io/Day-Planner/
+
 ## Tests
 
 Try writing in some things for your daily schedule, saving it, then leaving the page and coming back: see if your schedule is still there!
