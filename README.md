@@ -1,3 +1,3 @@
 # Day-Planner
 
-![images](../Day-Planner/Develop/images/Screenshot%20(10).)
+![images]Develop/images/Screenshot (10).png
